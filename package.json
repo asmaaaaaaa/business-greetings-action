@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "moment": "^2.30.1"
   }
 }
