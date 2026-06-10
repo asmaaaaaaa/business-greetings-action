@@ -1,0 +1,31 @@
+# Workflow name
+name: custum action
+
+# Triggers for the workflow
+on:
+  # Manual trigger using the workflow_dispatch event
+  workflow_dispatch:
+
+  # Automatic trigger on push events to the main branch
+  push:
+    branches:
+      - main
+
+# Jobs defined in the workflow
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: run custom action
+        uses: asmaaaaaaa/business-greeting-action@main
