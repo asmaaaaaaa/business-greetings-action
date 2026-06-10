@@ -28,4 +28,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: run custom action
-        uses: asmaaaaaaa/business-greeting-action@main
+        uses: asmaaaaaaa/business-greetings-action@main
